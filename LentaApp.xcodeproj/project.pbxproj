@@ -3,18 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		899088A524BEC4360023F798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088A424BEC4360023F798 /* AppDelegate.swift */; };
-		899088A724BEC4360023F798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088A624BEC4360023F798 /* SceneDelegate.swift */; };
-		899088A924BEC4360023F798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088A824BEC4360023F798 /* ViewController.swift */; };
-		899088AC24BEC4360023F798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899088AA24BEC4360023F798 /* Main.storyboard */; };
 		899088AE24BEC43A0023F798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899088AD24BEC43A0023F798 /* Assets.xcassets */; };
 		899088B124BEC43A0023F798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899088AF24BEC43A0023F798 /* LaunchScreen.storyboard */; };
 		899088BC24BEC43B0023F798 /* LentaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088BB24BEC43B0023F798 /* LentaAppTests.swift */; };
 		899088C724BEC43B0023F798 /* LentaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088C624BEC43B0023F798 /* LentaAppUITests.swift */; };
+		899088EA24BECC090023F798 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088E924BECC090023F798 /* Book.swift */; };
+		899088EC24BECC390023F798 /* BooksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088EB24BECC390023F798 /* BooksRepository.swift */; };
+		899088EE24BED1AE0023F798 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088ED24BED1AE0023F798 /* ApiRequest.swift */; };
+		899088F024BED21A0023F798 /* ApiFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088EF24BED21A0023F798 /* ApiFailure.swift */; };
+		899088F224BED8200023F798 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088F124BED81F0023F798 /* DataExtension.swift */; };
+		899088F424BED9F40023F798 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088F324BED9F40023F798 /* MainViewController.swift */; };
+		899088F624BEDA8F0023F798 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088F524BEDA8F0023F798 /* MainViewModel.swift */; };
+		899088FB24BEDF290023F798 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088F924BEDF290023F798 /* BookTableViewCell.swift */; };
+		899088FC24BEDF290023F798 /* BookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899088FA24BEDF290023F798 /* BookTableViewCell.xib */; };
+		899088FF24BEE1FD0023F798 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899088FD24BEE1FD0023F798 /* DetailsViewController.swift */; };
+		8990890024BEE1FD0023F798 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899088FE24BEE1FD0023F798 /* DetailsViewController.xib */; };
+		89BA8DF624BF3E5E00523BCA /* Pods_LentaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D666A3630B57A7020F1E57 /* Pods_LentaApp.framework */; };
+		89BA8DF724BF3E5E00523BCA /* Pods_LentaApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D666A3630B57A7020F1E57 /* Pods_LentaApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE62D7C040D9228B00A1C184 /* Pods_LentaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C724AABD1001B69E1F90D19 /* Pods_LentaAppTests.framework */; };
+		C9CDA9D0BDD2191DA720407B /* Pods_LentaApp_LentaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AA12DA1DC892C20F2E79F2 /* Pods_LentaApp_LentaAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +46,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		89BA8DF824BF3E5E00523BCA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				89BA8DF724BF3E5E00523BCA /* Pods_LentaApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2C724AABD1001B69E1F90D19 /* Pods_LentaAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LentaAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC1DF96D837A49F791F89E2 /* Pods-LentaApp-LentaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LentaApp-LentaAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-LentaApp-LentaAppUITests/Pods-LentaApp-LentaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		46820E1F9764B69125EA2FF7 /* Pods-LentaApp-LentaAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LentaApp-LentaAppUITests.release.xcconfig"; path = "Target Support Files/Pods-LentaApp-LentaAppUITests/Pods-LentaApp-LentaAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		899088A124BEC4360023F798 /* LentaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LentaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		899088A424BEC4360023F798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		899088A624BEC4360023F798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		899088A824BEC4360023F798 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		899088AB24BEC4360023F798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		899088AD24BEC43A0023F798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		899088B024BEC43A0023F798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		899088B224BEC43A0023F798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +75,24 @@
 		899088C224BEC43B0023F798 /* LentaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LentaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		899088C624BEC43B0023F798 /* LentaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentaAppUITests.swift; sourceTree = "<group>"; };
 		899088C824BEC43B0023F798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		899088E924BECC090023F798 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		899088EB24BECC390023F798 /* BooksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksRepository.swift; sourceTree = "<group>"; };
+		899088ED24BED1AE0023F798 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		899088EF24BED21A0023F798 /* ApiFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFailure.swift; sourceTree = "<group>"; };
+		899088F124BED81F0023F798 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		899088F324BED9F40023F798 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		899088F524BEDA8F0023F798 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		899088F924BEDF290023F798 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		899088FA24BEDF290023F798 /* BookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookTableViewCell.xib; sourceTree = "<group>"; };
+		899088FD24BEE1FD0023F798 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		899088FE24BEE1FD0023F798 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		89BA8DF224BF3E2600523BCA /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9585F1EA7BC6D40E4A536E28 /* Pods-LentaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LentaAppTests.debug.xcconfig"; path = "Target Support Files/Pods-LentaAppTests/Pods-LentaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEBBB0944C2FC96D0BE8FA40 /* Pods-LentaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LentaApp.debug.xcconfig"; path = "Target Support Files/Pods-LentaApp/Pods-LentaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B8095FC06866CC4497F29D90 /* Pods-LentaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LentaApp.release.xcconfig"; path = "Target Support Files/Pods-LentaApp/Pods-LentaApp.release.xcconfig"; sourceTree = "<group>"; };
+		C2D666A3630B57A7020F1E57 /* Pods_LentaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LentaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2871C8130247B5B050789B6 /* Pods-LentaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LentaAppTests.release.xcconfig"; path = "Target Support Files/Pods-LentaAppTests/Pods-LentaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4AA12DA1DC892C20F2E79F2 /* Pods_LentaApp_LentaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LentaApp_LentaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BA8DF624BF3E5E00523BCA /* Pods_LentaApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE62D7C040D9228B00A1C184 /* Pods_LentaAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +116,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9CDA9D0BDD2191DA720407B /* Pods_LentaApp_LentaAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50BAB549B8F7D49991418A66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89BA8DF224BF3E2600523BCA /* Alamofire.framework */,
+				C2D666A3630B57A7020F1E57 /* Pods_LentaApp.framework */,
+				F4AA12DA1DC892C20F2E79F2 /* Pods_LentaApp_LentaAppUITests.framework */,
+				2C724AABD1001B69E1F90D19 /* Pods_LentaAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8990889824BEC4360023F798 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +141,8 @@
 				899088BA24BEC43B0023F798 /* LentaAppTests */,
 				899088C524BEC43B0023F798 /* LentaAppUITests */,
 				899088A224BEC4360023F798 /* Products */,
+				D04E31D3B5434D19ECA213AA /* Pods */,
+				50BAB549B8F7D49991418A66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +159,13 @@
 		899088A324BEC4360023F798 /* LentaApp */ = {
 			isa = PBXGroup;
 			children = (
-				899088A424BEC4360023F798 /* AppDelegate.swift */,
-				899088A624BEC4360023F798 /* SceneDelegate.swift */,
-				899088A824BEC4360023F798 /* ViewController.swift */,
-				899088AA24BEC4360023F798 /* Main.storyboard */,
-				899088AD24BEC43A0023F798 /* Assets.xcassets */,
-				899088AF24BEC43A0023F798 /* LaunchScreen.storyboard */,
+				899088E224BECB7A0023F798 /* Models */,
+				899088E424BECB8C0023F798 /* ViewModels */,
+				899088E024BECB490023F798 /* Views */,
+				899088E524BECB940023F798 /* Controllers */,
+				899088E324BECB840023F798 /* Repositories */,
+				899088E624BECB9B0023F798 /* Helper */,
+				899088E124BECB680023F798 /* Support */,
 				899088B224BEC43A0023F798 /* Info.plist */,
 			);
 			path = LentaApp;
@@ -128,6 +189,98 @@
 			path = LentaAppUITests;
 			sourceTree = "<group>";
 		};
+		899088E024BECB490023F798 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				899088F924BEDF290023F798 /* BookTableViewCell.swift */,
+				899088FA24BEDF290023F798 /* BookTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		899088E124BECB680023F798 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				899088A424BEC4360023F798 /* AppDelegate.swift */,
+				899088AD24BEC43A0023F798 /* Assets.xcassets */,
+				899088AF24BEC43A0023F798 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		899088E224BECB7A0023F798 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				899088E924BECC090023F798 /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		899088E324BECB840023F798 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				899088EB24BECC390023F798 /* BooksRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		899088E424BECB8C0023F798 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				899088F524BEDA8F0023F798 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		899088E524BECB940023F798 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				899088F324BED9F40023F798 /* MainViewController.swift */,
+				899088FD24BEE1FD0023F798 /* DetailsViewController.swift */,
+				899088FE24BEE1FD0023F798 /* DetailsViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		899088E624BECB9B0023F798 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				899088E824BECBE60023F798 /* Extensions */,
+				899088E724BECBDE0023F798 /* API */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		899088E724BECBDE0023F798 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				899088ED24BED1AE0023F798 /* ApiRequest.swift */,
+				899088EF24BED21A0023F798 /* ApiFailure.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		899088E824BECBE60023F798 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				899088F124BED81F0023F798 /* DataExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D04E31D3B5434D19ECA213AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEBBB0944C2FC96D0BE8FA40 /* Pods-LentaApp.debug.xcconfig */,
+				B8095FC06866CC4497F29D90 /* Pods-LentaApp.release.xcconfig */,
+				2DC1DF96D837A49F791F89E2 /* Pods-LentaApp-LentaAppUITests.debug.xcconfig */,
+				46820E1F9764B69125EA2FF7 /* Pods-LentaApp-LentaAppUITests.release.xcconfig */,
+				9585F1EA7BC6D40E4A536E28 /* Pods-LentaAppTests.debug.xcconfig */,
+				E2871C8130247B5B050789B6 /* Pods-LentaAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +288,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 899088CB24BEC43B0023F798 /* Build configuration list for PBXNativeTarget "LentaApp" */;
 			buildPhases = (
+				DEF3D2A2612C18BA3E27BDB8 /* [CP] Check Pods Manifest.lock */,
 				8990889D24BEC4360023F798 /* Sources */,
 				8990889E24BEC4360023F798 /* Frameworks */,
 				8990889F24BEC4360023F798 /* Resources */,
+				39B690475FAEB605A3D674B8 /* [CP] Embed Pods Frameworks */,
+				89BA8DF824BF3E5E00523BCA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +308,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 899088CE24BEC43B0023F798 /* Build configuration list for PBXNativeTarget "LentaAppTests" */;
 			buildPhases = (
+				FD33A0085C50719E4A64355C /* [CP] Check Pods Manifest.lock */,
 				899088B324BEC43B0023F798 /* Sources */,
 				899088B424BEC43B0023F798 /* Frameworks */,
 				899088B524BEC43B0023F798 /* Resources */,
@@ -170,9 +327,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 899088D124BEC43B0023F798 /* Build configuration list for PBXNativeTarget "LentaAppUITests" */;
 			buildPhases = (
+				CA56DC1B856A8853B067022F /* [CP] Check Pods Manifest.lock */,
 				899088BE24BEC43B0023F798 /* Sources */,
 				899088BF24BEC43B0023F798 /* Frameworks */,
 				899088C024BEC43B0023F798 /* Resources */,
+				4A78A960AEC1E34F136C9CC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +393,8 @@
 			files = (
 				899088B124BEC43A0023F798 /* LaunchScreen.storyboard in Resources */,
 				899088AE24BEC43A0023F798 /* Assets.xcassets in Resources */,
-				899088AC24BEC4360023F798 /* Main.storyboard in Resources */,
+				899088FC24BEDF290023F798 /* BookTableViewCell.xib in Resources */,
+				8990890024BEE1FD0023F798 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +414,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		39B690475FAEB605A3D674B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LentaApp/Pods-LentaApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LentaApp/Pods-LentaApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LentaApp/Pods-LentaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A78A960AEC1E34F136C9CC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LentaApp-LentaAppUITests/Pods-LentaApp-LentaAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LentaApp-LentaAppUITests/Pods-LentaApp-LentaAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LentaApp-LentaAppUITests/Pods-LentaApp-LentaAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA56DC1B856A8853B067022F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LentaApp-LentaAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF3D2A2612C18BA3E27BDB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LentaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD33A0085C50719E4A64355C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LentaAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8990889D24BEC4360023F798 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				899088A924BEC4360023F798 /* ViewController.swift in Sources */,
 				899088A524BEC4360023F798 /* AppDelegate.swift in Sources */,
-				899088A724BEC4360023F798 /* SceneDelegate.swift in Sources */,
+				899088EC24BECC390023F798 /* BooksRepository.swift in Sources */,
+				899088FB24BEDF290023F798 /* BookTableViewCell.swift in Sources */,
+				899088F024BED21A0023F798 /* ApiFailure.swift in Sources */,
+				899088F224BED8200023F798 /* DataExtension.swift in Sources */,
+				899088EE24BED1AE0023F798 /* ApiRequest.swift in Sources */,
+				899088EA24BECC090023F798 /* Book.swift in Sources */,
+				899088F424BED9F40023F798 /* MainViewController.swift in Sources */,
+				899088F624BEDA8F0023F798 /* MainViewModel.swift in Sources */,
+				899088FF24BEE1FD0023F798 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +567,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		899088AA24BEC4360023F798 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				899088AB24BEC4360023F798 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		899088AF24BEC43A0023F798 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +628,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +682,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,6 +694,7 @@
 		};
 		899088CC24BEC43B0023F798 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBBB0944C2FC96D0BE8FA40 /* Pods-LentaApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +713,7 @@
 		};
 		899088CD24BEC43B0023F798 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8095FC06866CC4497F29D90 /* Pods-LentaApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +732,7 @@
 		};
 		899088CF24BEC43B0023F798 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9585F1EA7BC6D40E4A536E28 /* Pods-LentaAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +755,7 @@
 		};
 		899088D024BEC43B0023F798 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2871C8130247B5B050789B6 /* Pods-LentaAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +778,7 @@
 		};
 		899088D224BEC43B0023F798 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC1DF96D837A49F791F89E2 /* Pods-LentaApp-LentaAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +799,7 @@
 		};
 		899088D324BEC43B0023F798 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46820E1F9764B69125EA2FF7 /* Pods-LentaApp-LentaAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,7 +828,7 @@
 				899088CA24BEC43B0023F798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		899088CB24BEC43B0023F798 /* Build configuration list for PBXNativeTarget "LentaApp" */ = {
 			isa = XCConfigurationList;
@@ -569,7 +837,7 @@
 				899088CD24BEC43B0023F798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		899088CE24BEC43B0023F798 /* Build configuration list for PBXNativeTarget "LentaAppTests" */ = {
 			isa = XCConfigurationList;
@@ -578,7 +846,7 @@
 				899088D024BEC43B0023F798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		899088D124BEC43B0023F798 /* Build configuration list for PBXNativeTarget "LentaAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -587,7 +855,7 @@
 				899088D324BEC43B0023F798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
